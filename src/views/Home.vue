@@ -1,7 +1,7 @@
 <template>
   <div style="background:#F2F2F2">
     <section class="Home">
-      <b-container style="padding:5rem;">
+      <b-container style="padding:2.5rem;">
         <div class="cabecera">
           <h1 class="title"><span style="color:#FFF">Soluciones simples</span> <br> para problemas complejos</h1>
           <h5 class="sub-title">"Los problemas complejos se resuelven con la suma de pequeñas y simples soluciones."</h5>

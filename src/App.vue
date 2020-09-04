@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <b-navbar toggleable type="dark" class="navbar navbar-expand-lg fixed-top" style="background:#FFF">        
+      <b-navbar toggleable type="dark" class="navbar navbar-expand-lg fixed-top" style="background:#FFF;width:100%">        
         <div class="container">
             <b-navbar-toggle>
                 <i class="fas fa-bars" v-b-toggle.sidebar-no-header style="font-size:1.50rem; color:#000;"></i>
