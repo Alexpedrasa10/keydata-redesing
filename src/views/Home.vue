@@ -1,14 +1,16 @@
 <template>
-  <div class="mt-5" style="background:#F2F2F2">
+  <div style="background:#F2F2F2">
     <section class="Home">
-      <div class="container">
-        <h1 class="title"><span style="color:#FFF">Soluciones simples</span> <br> para problemas complejos</h1>
-        <h3 class="sub-title">"Los problemas complejos se resuelven con la suma de pequeñas y simples soluciones."</h3>
-        <div class="buttons">
-          <a class="btn" id="btn-servicios" to="/">Servicios</a>
-          <a class="btn m-2" id="btn-contacto" to="/">Contactanos</a>
+      <b-container style="padding:5rem;">
+        <div class="cabecera">
+          <h1 class="title"><span style="color:#FFF">Soluciones simples</span> <br> para problemas complejos</h1>
+          <h5 class="sub-title">"Los problemas complejos se resuelven con la suma de pequeñas y simples soluciones."</h5>
         </div>
-      </div>
+        <div class="buttons">
+          <a class="btn m-1" id="btn-servicios" to="/">Servicios</a>
+          <a class="btn" id="btn-contacto" to="/"> Contactanos</a>
+        </div>
+      </b-container>
     </section>
     <section class="Service">
       <div class="container">
@@ -34,8 +36,8 @@
             <img src="../assets/img-home2.jpg" alt="" class="img">
           </b-col>
            <b-col>
-            <h2 class="title-service">¿Quienes somos?</h2>
-            <p>
+            <h2 class="title-who">¿Quienes somos?</h2>
+            <p style="text-align: right;">
               Somos un equipo Argentino, que nos especializamos en ofrecer servicios que resuelven problemas crónicos.
               En la toma de decisiones está la esencia de los negocios. Gerenciar es tomar decisiones, muchas veces bajo presión, con información limitada y mucha incertidumbre. Un aspecto básico es entender y analizar la información, organizar los datos para facilitar su posterior uso y toma de decisiones. Por supuesto, hay muchas otras dimensiones que entran en juego, como el comportamiento de las personas, anticipar estas respuestas, pensar estratégicamente, pero el primer paso es formular bien el problema, estructurarlo, procesar la información.
             </p>
@@ -52,8 +54,7 @@
   background: #11998e;
   background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
   background: linear-gradient(to right, #38ef7d, #11998e);
-  padding: 5rem;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-name: slidein;
 }
 
@@ -61,6 +62,10 @@
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding: 1rem;
+}
+
+.cabecera{
+  width: 100%;
 }
 
 .title{
@@ -72,6 +77,10 @@
 .sub-title{
   text-transform: uppercase;
   font-weight: 400;
+}
+
+.buttons{
+  display: inline-block;
 }
 
 #btn-servicios{
@@ -99,7 +108,14 @@
   text-transform: uppercase;
   font-weight: 800;
   padding: 1rem;
-  text-align: center;
+  text-align: left;
+}
+
+.title-who{
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 1rem;
+  text-align: right;
 }
 
 .img{

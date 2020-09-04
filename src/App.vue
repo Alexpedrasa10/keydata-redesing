@@ -12,7 +12,9 @@
                         <nav class="mb-8">
                             <b-nav vertical>
                                 <b-nav-item to="/">Home</b-nav-item>
+                                <hr>
                                 <b-nav-item to="/servicios">Servicios</b-nav-item>
+                                <hr>
                                 <b-nav-item to="/contacto">Contacto</b-nav-item>
                             </b-nav>
                         </nav>
@@ -20,13 +22,13 @@
                 </template>
                 </b-sidebar>
             </b-navbar-toggle>
-            <b-navbar-brand aling="center">
+            <b-navbar-brand>
                 <router-link to="/">
                   <img src="./assets/logo.png" alt="logo" style="width:5rem;height:5rem;">
                 </router-link>           
             </b-navbar-brand>
 
-            <b-collapse id="sidebar-1" is-nav>
+            <b-collapse is-nav>
                 <b-navbar-nav class="ml-auto" >
                   <b-nav-item to="/">Home</b-nav-item>
                   <b-nav-item to="/servicios">Servicios</b-nav-item>
@@ -39,7 +41,18 @@
     <router-view/>
     <footer>
       <div class="container">
-        <h5><i class="fas fa-copyright"></i> Key Data 2020. Todos los derechos reservados</h5>
+        <b-row>
+          <b-col md="8" lg="10" sm="12">
+            <h4 style="text-transform:uppercase;font-weight:800">Contacto</h4>
+            <p class="m-0"><i class="fas fa-envelope"></i> info@bd360.online</p>
+            <p class="m-0"><i class="fas fa-envelope"></i> recruiting@bd360.online</p>
+            <p class="m-0"><i class="fas fa-phone-square"></i> +54 9 351-208-3456</p>
+          </b-col>
+          <b-col md="2" lg="2" sm="12" style="align-content: flex-end;">
+            <i class="fab fa-linkedin" style="font-size:2.5rem"></i>
+          </b-col>
+        </b-row>
+        <h5 class="mt-5"><i class="fas fa-copyright"></i> Key Data 2020. Todos los derechos reservados</h5>
       </div>
     </footer>
   </div>
@@ -80,7 +93,7 @@ footer{
 }
 
 footer h5{
-  font-size: 1rem;
+  font-size: .75rem;
   text-align: center;
 }
 </style>
